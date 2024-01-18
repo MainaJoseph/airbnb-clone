@@ -6,8 +6,13 @@ import { useCallback, useState } from "react";
 import MenuItems from "./MenuItems";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
+import { User } from "@prisma/client";
 
-const UserMenu = () => {
+interface UserMenuProps {
+  currentUser?: User | null;
+}
+
+const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const loginModal = useLoginModal();
   const registerModal = useRegisterModal();
   const [isOpen, setIsOpen] = useState(false);
@@ -38,10 +43,22 @@ const UserMenu = () => {
       {isOpen && (
         <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
           <div className="flex flex-col cursor-pointer">
-            <>
-              <MenuItems onClick={loginModal.onOpen} label="Login" />
-              <MenuItems label="Sign up" onClick={registerModal.onOpen} />
-            </>
+            {currentUser ? (
+              <>
+                <MenuItems label="My trips" onClick={() => {}} />
+                <MenuItems label="My favorites" onClick={() => {}} />
+                <MenuItems label="My reservations" onClick={() => {}} />
+                <MenuItems label="My properties" onClick={() => {}} />
+                <MenuItems label="Airbnb your home" onClick={() => {}} />
+                <hr />
+                <MenuItems label="Logout" onClick={() => {}} />
+              </>
+            ) : (
+              <>
+                <MenuItems label="Login" onClick={loginModal.onOpen} />
+                <MenuItems label="Sign up" onClick={registerModal.onOpen} />
+              </>
+            )}
           </div>
         </div>
       )}
