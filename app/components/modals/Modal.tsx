@@ -94,8 +94,8 @@ const Modal: React.FC<ModalProps> = ({
           my-6
           mx-auto 
           h-full 
-          lg:h-auto
-          md:h-auto
+          lg:h-2/3
+          md:h-2/3
           "
         >
           {/*content*/}
@@ -111,7 +111,7 @@ const Modal: React.FC<ModalProps> = ({
             <div
               className="
               translate
-              h-full
+              h-auto
               lg:h-auto
               md:h-auto
               border-0 
