@@ -21,11 +21,20 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const toogleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
+
+  const onRent = useCallback(() => {
+    if (!currentUser) {
+      return loginModal.onOpen();
+    }
+
+    //open login  modal
+  }, [loginModal, currentUser]);
+
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         <div
-          onClick={() => {}}
+          onClick={onRent}
           className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
         >
           Airbnb your home
@@ -50,7 +59,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                 <MenuItems label="My favorites" onClick={() => {}} />
                 <MenuItems label="My reservations" onClick={() => {}} />
                 <MenuItems label="My properties" onClick={() => {}} />
-                <MenuItems label="Airbnb your home" onClick={() => {}} />
+                <MenuItems label="Airbnb your home" onClick={onRent} />
                 <hr />
                 <MenuItems label="Logout" onClick={() => signOut()} />
               </>
@@ -59,7 +68,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
                 <MenuItems label="Sign up" onClick={registerModal.onOpen} />
                 <MenuItems label="Login" onClick={loginModal.onOpen} />
                 <MenuItems label="Gift Cards" onClick={() => {}} />
-                <MenuItems label="Airbnb your home" onClick={() => {}} />
+                <MenuItems label="Airbnb your home" onClick={onRent} />
                 <MenuItems label="Help Center" onClick={() => {}} />
                 <hr />
               </>
