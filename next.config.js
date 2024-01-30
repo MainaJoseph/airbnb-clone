@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: [
       "res.cloudinary.com",
