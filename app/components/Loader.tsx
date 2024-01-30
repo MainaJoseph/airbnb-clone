@@ -1,6 +1,6 @@
 "use client";
 
-import { PuffLoader } from "react-spinners";
+import { CirclesWithBar } from "react-loader-spinner";
 
 const Loader = () => {
   return (
@@ -13,7 +13,7 @@ const Loader = () => {
       items-center 
     "
     >
-      <PuffLoader size={100} color="red" />
+      <CirclesWithBar color="red" />
     </div>
   );
 };
