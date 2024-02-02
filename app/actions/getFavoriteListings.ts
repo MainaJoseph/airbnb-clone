@@ -2,7 +2,16 @@ import prisma from "@/app/libs/prismadb";
 
 import getCurrentUser from "./getCurrentUser";
 
-export default async function getFavoriteListings() {
+////////////////
+interface IParams {
+  listingId?: string;
+  userId?: string;
+  authorId?: string;
+}
+
+///////////
+
+export default async function getFavoriteListings(params: IParams) {
   try {
     const currentUser = await getCurrentUser();
 
