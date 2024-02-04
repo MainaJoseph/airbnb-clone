@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full Stack Airbnb Clone with Next.js 13
+
+Welcome to the Full Stack Airbnb Clone project! This application is built using cutting-edge technologies, providing a seamless experience for users. Below, you'll find an overview of the technologies used and instructions on how to set up the project.
+
+## Technologies Used
+
+- **Next.js 13**: A React framework for building server-rendered and statically generated web applications.
+- **React**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for quickly building custom designs.
+- **Prisma**: A modern database toolkit for Node.js and TypeScript.
+- **MongoDB**: A NoSQL database for storing and retrieving data.
+- **NextAuth**: An authentication library for Next.js applications.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Full Stack Airbnb Clone, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/your-username/full-stack-airbnb-clone.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   cd full-stack-airbnb-clone
+   npm install
+   ```
 
-## Learn More
+3. **Set up environment variables:**
+   Create a `.env.local` file in the root of the project and add the following variables:
 
-To learn more about Next.js, take a look at the following resources:
+   ```env
+   NEXT_PUBLIC_MAPBOX_API_KEY=your-mapbox-api-key
+   MONGODB_URI=your-mongodb-uri
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the development server:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **Open your browser:**
+   Visit [http://localhost:3000](http://localhost:3000) to see the Airbnb Clone in action!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **App Router**: Utilizing the power of Next.js 13 for efficient routing.
+- **React Components**: Building the UI with reusable and modular React components.
+- **Tailwind Styling**: Styling the application with the utility-first approach of Tailwind CSS.
+- **Prisma ORM**: Interacting with the MongoDB database using the Prisma ORM.
+- **User Authentication**: Implementing authentication using NextAuth for a secure user experience.
+
+Feel free to explore the codebase, make contributions, and customize it to fit your needs. Happy coding! 🚀
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
