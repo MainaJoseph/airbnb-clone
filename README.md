@@ -1,4 +1,4 @@
-# Full Stack Airbnb Clone with Next.js 13
+# Full Stack Airbnb Clone with Next.js 14
 
 Welcome to the Full Stack Airbnb Clone project! This application is built using cutting-edge technologies, providing a seamless experience for users. Below, you'll find an overview of the technologies used and instructions on how to set up the project.
 
@@ -54,7 +54,7 @@ To get started with the Full Stack Airbnb Clone, follow these steps:
 
 ## Features
 
-- **App Router**: Utilizing the power of Next.js 13 for efficient routing.
+- **App Router**: Utilizing the power of Next.js 14 for efficient routing.
 - **React Components**: Building the UI with reusable and modular React components.
 - **Tailwind Styling**: Styling the application with the utility-first approach of Tailwind CSS.
 - **Prisma ORM**: Interacting with the MongoDB database using the Prisma ORM.
