@@ -15,13 +15,12 @@ Welcome to the Full Stack Airbnb Clone project! This application is built using 
 
 ![bbb](https://github.com/MainaJoseph/airbnb-clone/assets/75726095/b4f7d287-461b-4324-9ea4-1379d95efdb4)
 
-
 To get started with the Full Stack Airbnb Clone, follow these steps:
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/full-stack-airbnb-clone.git
+   git clone https://github.com/MainaJoseph/airbnb-clone.git
    ```
 
 2. **Install dependencies:**
@@ -32,11 +31,16 @@ To get started with the Full Stack Airbnb Clone, follow these steps:
    ```
 
 3. **Set up environment variables:**
-   Create a `.env.local` file in the root of the project and add the following variables:
+   Create a `.env` file in the root of the project and add the following variables:
 
    ```env
-   NEXT_PUBLIC_MAPBOX_API_KEY=your-mapbox-api-key
-   MONGODB_URI=your-mongodb-uri
+   DATABASE_URL=
+   NEXTAUTH_SECRET=
+   GITHUB_ID=
+   GITHUB_SECRET=
+   GOOGLE_CLIENT_ID=
+   GOOGLE_CLIENT_SECRET=
+   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
    ```
 
 4. **Run the development server:**
