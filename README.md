@@ -13,6 +13,9 @@ Welcome to the Full Stack Airbnb Clone project! This application is built using 
 
 ## Getting Started
 
+![bbb](https://github.com/MainaJoseph/airbnb-clone/assets/75726095/b4f7d287-461b-4324-9ea4-1379d95efdb4)
+
+
 To get started with the Full Stack Airbnb Clone, follow these steps:
 
 1. **Clone the repository:**
