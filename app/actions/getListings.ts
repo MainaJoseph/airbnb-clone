@@ -1,5 +1,5 @@
 import prisma from "@/app/libs/prismadb";
-import { Listing } from "@prisma/client"; // Assuming Listing is the name of your Prisma model
+import { Listing } from "@/prisma/generated/client";
 
 export interface IListingsParams {
   userId?: string;
