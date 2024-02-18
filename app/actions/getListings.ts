@@ -1,4 +1,5 @@
 import prisma from "@/app/libs/prismadb";
+import { Listing } from "@prisma/client"; // Assuming Listing is the name of your Prisma model
 
 export interface IListingsParams {
   userId?: string;
@@ -75,7 +76,8 @@ export default async function getListings(params: IListingsParams) {
       };
     }
 
-    const listings = await prisma.listing.findMany({
+    const listings: Listing[] = await prisma.listing.findMany({
+      // Annotating the type of listings as Listing[]
       where: query,
       orderBy: {
         createdAt: "desc",

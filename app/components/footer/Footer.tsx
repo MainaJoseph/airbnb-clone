@@ -1,12 +1,7 @@
 import Link from "next/link";
 import Container from "../Container";
 import FooterList from "./FooterList";
-import FooterListCol from "./FooterListCol";
-import { RiVisaLine, RiTwitterXFill } from "react-icons/ri";
-import { GiReceiveMoney } from "react-icons/gi";
-import { FaCcMastercard, FaInstagramSquare } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
-import { AiFillInstagram, AiFillYoutube, AiOutlineSlack } from "react-icons/ai";
+import { FaInstagramSquare } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 import { MdOutlineEuro } from "react-icons/md";
 import { FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
