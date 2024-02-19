@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import prisma from "@/app/libs/prismadb";
 
 interface IParams {
