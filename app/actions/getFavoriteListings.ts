@@ -13,7 +13,7 @@ interface IParams {
 
 ///////////
 
-export default async function getFavoriteListings(params: IParams) {
+export default async function getFavoriteListings(params: IParams = {}) {
   try {
     const currentUser = await getCurrentUser();
 
