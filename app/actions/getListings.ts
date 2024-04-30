@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import prisma from "@/app/libs/prismadb";
 import { Listing } from "@/prisma/generated/client";
 
